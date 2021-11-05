@@ -1,0 +1,16 @@
+<ng-container *ngIf="post != null">
+    <li  [ngClass]="
+    {
+        'list-group-item ': true,
+        'list-group-item-success': post.loveIts>=0,
+        'list-group-item-danger': post.loveIts<0 
+     }">
+    <div class="row">
+        <h2 class="col-9"> {{ post?.title }} </h2> <span class="col-3">{{post?.create_at | date:'short' }}</span>
+    </div>
+        <p> {{ post?.content }} <br/>
+            <button class="btn btn-success btn-sm" (click)="like()" >LoveIt!</button>&nbsp;
+            <button class="btn btn-danger btn-sm" (click)="dislike()">Don't love It!</button>
+        </p>
+    </li>
+</ng-container>
