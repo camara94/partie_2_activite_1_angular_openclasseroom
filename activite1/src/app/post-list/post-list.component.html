@@ -1,0 +1,10 @@
+<ul [ngClass]="{'list-group': true}">
+    <ng-template  [ngIf]="posts" [ngIfElse]="loading">
+        <ng-container *ngFor="let post of posts">
+            <app-post-list-item [post]="post" ></app-post-list-item>
+        </ng-container>
+    </ng-template>
+    <ng-template #loading>
+        <div>Vous avez aucun post dans la liste</div>
+    </ng-template>
+</ul>
