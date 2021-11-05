@@ -28,3 +28,5 @@ Nous allons créer une application simple de type blog.  Cette application va af
 * Pensez aux **Pipes** pour la transformation de données, notamment pour la date
 
 ## Aperçu finale de l'exercice
+
+![aperçu](images/apercu.png)
