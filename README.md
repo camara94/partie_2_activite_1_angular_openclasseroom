@@ -26,3 +26,5 @@ Nous allons créer une application simple de type blog.  Cette application va af
 * Pensez aux directives structurelles comme  <code>*ngFor</code>  , et également aux directives par attribut comme  <code>ngClass</code>
 
 * Pensez aux **Pipes** pour la transformation de données, notamment pour la date
+
+## Aperçu finale de l'exercice
